@@ -1,0 +1,53 @@
+
+.testimonial-card .card-up {
+  height: 100px;
+  overflow: hidden;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.aqua-gradient {
+  background:  #164863;
+}
+
+.testimonial-card .avatar {
+  width: 100px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.mainPage {
+    background-image: url('../../images/pic02.jpg'); 
+            background-repeat: no-repeat; 
+            background-size: cover;
+            /* background-color: #9BBEC8; */
+
+}
+
+figure {
+    display: grid;
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 20px;
+  }
+  figure > * {
+    grid-area: 1/1;
+    transition: .4s;
+  }
+ 
+  figure:hover img {
+    transform: scale(1.09);
+  }
+ 
+  #event-name{
+    color: #164863;
+    text-decoration: none;
+  }
+  #event-name:hover{
+    color: rgb(197, 103, 125);
+  }
+
+  
