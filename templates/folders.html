@@ -7,65 +7,81 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="static/assets/css/main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
-	<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="mainPage is-preload">
 
         <!-- Header -->
-					<header id="header" >
-						<h1><a href="index.html">PicSplit</a></h1>
-					</header>
+			<header id="header" >
+				<h1><a href=loggedin>PicSplit</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li><a href=loggedin>Home</a></li>
+									<li><a href="{{ url_for('.loggedin', _anchor='videoDiv2') }}">Split</a></li>
+									<li><a href="collections">Your Collections</a></li>
+									<li><a href=".">Log Out</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
 		<!-- Page Wrapper -->
-			<div >
-				<!-- Three -->
+			<div id="banner2">
 					<section id="three" class="wrapper style3 special">
 						<div class="inner">
-							<header >
-								<h2 style="font-family: 'Montserrat', sans-serif; color: white; font-size: 30px;"> Event 1</h2>
-							</header>
+							<div>
+								<h3 id="folder-title" style="margin-top: 1%;"> Event 1</h2>
+							</div>
 							<ul class="features">
                                 <li class="icon  fa-folder">
-									<a href=photos><h3>Folder 1</h3></a>
+									<a href=photos><h3>Person 1</h3></a>
 								</li>
                                 <li class="icon  fa-folder">
-									<a href=photos><h3>Folder 1</h3></a>
+									<a href=photos><h3>Person 2</h3></a>
 								</li>
                                 <li class="icon  fa-folder">
-									<a href=photos><h3>Folder 1</h3></a>
+									<a href=photos><h3>Person 3</h3></a>
 								</li>
                                 <li class="icon  fa-folder">
-									<a href=photos><h3>Folder 1</h3></a>
+									<a href=photos><h3>Person 4</h3></a>
 								</li>
                                 <li class="icon  fa-folder">
-									<a href=photos><h3>Folder 1</h3></a>
+									<a href=photos><h3>Person 5</h3></a>
 								</li>
                                 <li class="icon  fa-folder">
-									<a href=photos><h3>Folder 1</h3></a>
+									<a href=photos><h3>Person 6</h3></a>
 								</li>
                                 <li class="icon  fa-folder">
-									<a href=photos><h3>Folder 1</h3></a>
+									<a href=photos><h3>Person 7</h3></a>
 								</li>
 							</ul>
 						</div>
 					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-
 			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+			
 
 		<!-- Scripts -->
 			<script src="static/assets/js/jquery.min.js"></script>

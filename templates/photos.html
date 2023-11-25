@@ -7,31 +7,60 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="static/assets/css/main.css" />
         <link rel="stylesheet" href="static/assets/css/cards.css" />
+        <link rel="stylesheet" href="static/assets/css/photos.css" />
     <noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
 	</head>
 
 	<body  class="mainPage is-preload" >
         <!-- Header -->
-            <header id="header" >
-                <h1><a href="index.html">PicSplit</a></h1>
-            </header>
+        <header id="header" >
+            <h1><a href=loggedin>PicSplit</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href=loggedin>Home</a></li>
+                                <li><a href="{{ url_for('.loggedin', _anchor='videoDiv2') }}">Split</a></li>
+                                <li><a href="collections">Your Collections</a></li>
+                                <li><a href=".">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- Images -->
-            <div style="display: flex; flex-wrap: wrap; padding-top: 20px;margin-top: 50px;margin-bottom: 50px;">
-                <figure>
-                    <img src="https://picsum.photos/id/287/250/300" alt="Mountains">
-                </figure>
-                <figure style="--c:#fff5">
-                    <img src="https://picsum.photos/id/475/250/300" alt="Mountains">
-                </figure>
-                <figure>
-                    <img src="https://picsum.photos/id/287/250/300" alt="Mountains">
-                </figure>
-                <figure style="--c:#fff5">
-                    <img src="https://picsum.photos/id/475/250/300" alt="Mountains">
-                </figure>
+            <div id="banner3" style="display: flex; flex-wrap: wrap; padding-top: 2%;margin-top: 2%;margin-bottom: 50px;">
+                <div style="width: 100%; height: 100%;">
+                    <div class="images" style="display:flex; justify-content: left; flex-wrap: wrap;" >
+                        <img src="https://rukminim1.flixcart.com/image/850/1000/k8t3jbk0/poster/6/f/w/medium-poster-narendra-modi-ji-poster-poster-for-wall-decoration-original-imafqqrru7x2hjbw.jpeg?q=90" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2022/01/02/2dde29fbfeb207d25b70fcfc2a2b17c8.jpg?fit=2000%2C1096&quality=80&zoom=1&ssl=1?v=1641133855" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://www.w3schools.com/howto/img_fjords.jpg" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://rukminim1.flixcart.com/image/850/1000/k8t3jbk0/poster/6/f/w/medium-poster-narendra-modi-ji-poster-poster-for-wall-decoration-original-imafqqrru7x2hjbw.jpeg?q=90" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2022/01/02/2dde29fbfeb207d25b70fcfc2a2b17c8.jpg?fit=2000%2C1096&quality=80&zoom=1&ssl=1?v=1641133855" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://www.w3schools.com/howto/img_fjords.jpg" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://rukminim1.flixcart.com/image/850/1000/k8t3jbk0/poster/6/f/w/medium-poster-narendra-modi-ji-poster-poster-for-wall-decoration-original-imafqqrru7x2hjbw.jpeg?q=90" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2022/01/02/2dde29fbfeb207d25b70fcfc2a2b17c8.jpg?fit=2000%2C1096&quality=80&zoom=1&ssl=1?v=1641133855" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://www.w3schools.com/howto/img_fjords.jpg" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://rukminim1.flixcart.com/image/850/1000/k8t3jbk0/poster/6/f/w/medium-poster-narendra-modi-ji-poster-poster-for-wall-decoration-original-imafqqrru7x2hjbw.jpeg?q=90" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2022/01/02/2dde29fbfeb207d25b70fcfc2a2b17c8.jpg?fit=2000%2C1096&quality=80&zoom=1&ssl=1?v=1641133855" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://www.w3schools.com/howto/img_fjords.jpg" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://rukminim1.flixcart.com/image/850/1000/k8t3jbk0/poster/6/f/w/medium-poster-narendra-modi-ji-poster-poster-for-wall-decoration-original-imafqqrru7x2hjbw.jpeg?q=90" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2022/01/02/2dde29fbfeb207d25b70fcfc2a2b17c8.jpg?fit=2000%2C1096&quality=80&zoom=1&ssl=1?v=1641133855" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://www.w3schools.com/howto/img_fjords.jpg" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://rukminim1.flixcart.com/image/850/1000/k8t3jbk0/poster/6/f/w/medium-poster-narendra-modi-ji-poster-poster-for-wall-decoration-original-imafqqrru7x2hjbw.jpeg?q=90" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2022/01/02/2dde29fbfeb207d25b70fcfc2a2b17c8.jpg?fit=2000%2C1096&quality=80&zoom=1&ssl=1?v=1641133855" alt="" width="300" height="200" style="margin:2%;">
+                        <img src="https://www.w3schools.com/howto/img_fjords.jpg" alt="" width="300" height="200" style="margin:2%;">
+                    </div>   
+                    <div id="image-viewer">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="full-image">
+                    </div>
+                </div>
             </div>
-        
 
         <!-- Footer -->
             <footer id="footer">
@@ -43,17 +72,18 @@
                     <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
                 </ul>
                 <ul class="copyright">
-                    <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <li>&copy; PICSPLIT</li>
                 </ul>
             </footer>
 
         <!-- Scripts -->
-			<script src="static/assets/js/jquery.min.js"></script>
-			<script src="static/assets/js/jquery.scrollex.min.js"></script>
-			<script src="static/assets/js/jquery.scrolly.min.js"></script>
-			<script src="static/assets/js/browser.min.js"></script>
-			<script src="static/assets/js/breakpoints.min.js"></script>
-			<script src="static/assets/js/util.js"></script>
-			<script src="static/assets/js/main.js"></script>
-	</body>
+            <script src="static/assets/js/jquery.min.js"></script>
+            <script src="static/assets/js/jquery.scrollex.min.js"></script>
+            <script src="static/assets/js/jquery.scrolly.min.js"></script>
+            <script src="static/assets/js/browser.min.js"></script>
+            <script src="static/assets/js/breakpoints.min.js"></script>
+            <script src="static/assets/js/util.js"></script>
+            <script src="static/assets/js/main.js"></script>
+            <script src="static/assets/js/photos.js"></script>
+    </body>
 </html>
